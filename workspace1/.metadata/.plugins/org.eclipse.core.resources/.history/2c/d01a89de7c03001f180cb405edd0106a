@@ -1,0 +1,9 @@
+spring.application.name=demo
+
+server.port=7001
+
+
+eureka.instance.hostname=eureka.com
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
+eureka.client.service-url.defaultZone=http://eureka.com:7002/eureka/,http://eureka7003.com:7003/eureka/

@@ -1,0 +1,65 @@
+spring:
+  application:
+    name: eurekaClient
+############################################################
+#
+# mysql
+#
+############################################################
+  datasource:
+    url: jdbc:mysql://192.168.51.30:3306/mcc_znjx
+    username: mccbts
+    password: Mccbts#2022
+    driver-class-name: com.mysql.jdbc.Driver
+    max-idle: 10
+    max-wait: 10000
+    min-idle: 5
+    initial-size: 5
+ ############################################################
+#
+# webpage
+#
+############################################################   
+    
+  thymeleaf:
+    mode: HTML5
+    encoding=UTF-8
+    servlet.content-type=text/html
+#为便于测试，在开发时需要关闭缓存
+    cache=false
+        
+server:
+  port: 9001
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8889/eureka/
+    healthcheck:
+      enabled: false
+#    instance:
+#      lease-expiration-duration-in-seconds: 30
+#      lease-renewal-interval-in-seconds: 10
+#    registry-fetch-interval-seconds: 5
+
+
+###############################
+
+
+
+
+#1.1:属性讲解
+#(1)file: 日志输出到根目录下log文件夹，app-log.log文件中
+#(2)root： 定义了root的级别是info
+#(3) com.demo: 打印com.demo包下面的所有日志，级别为debug级别
+logging:
+  level:
+    root: info
+#    com.demo: debug
+#  file: log/app-log.log
+ # pattern:
+    #console: '%d{MM-dd-HH:mm:ss} [%thread] %-5level %logger- %msg%n'
+    #console: '%clr(%d{MM-dd HH:mm:ss}){faint} %clr(%5p) %clr(---){faint} %clr(%-80.80logger{79}){cyan} %clr(:){faint} %m%n'
+    #file=%d{yyyy-MM-dd-HH:mm} [%thread] %-5level %logger- %msg%n
+    #%-5level——日志级别，并且使用5个字符靠左对齐
+

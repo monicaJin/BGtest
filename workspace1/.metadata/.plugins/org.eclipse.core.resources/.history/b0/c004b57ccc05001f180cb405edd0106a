@@ -1,0 +1,28 @@
+package com.example.service;
+
+public class Student {
+	
+	String username,password;
+	int id;
+
+	public void setId(int i) {
+		// TODO Auto-generated method stub
+		this.id=i;
+		
+	}
+	
+	public void setUsername(String username) {
+		// TODO Auto-generated method stub
+		this.username=username;
+		
+	}
+	
+	
+	public void setPassword(String password) {
+		// TODO Auto-generated method stub
+		this.password=password;
+		
+	}
+	
+
+}

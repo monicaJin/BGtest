@@ -1,0 +1,9 @@
+package com.example.controller;
+
+public class WebTest {
+
+	public WebTest() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

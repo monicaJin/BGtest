@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: eurekaClient
+
+server:
+  port: 9001
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8889/eureka/
+    healthcheck:
+      enabled: false
+    instance:
+      lease-expiration-duration-in-seconds: 30
+      lease-renewal-interval-in-seconds: 10
+    registry-fetch-interval-seconds: 5

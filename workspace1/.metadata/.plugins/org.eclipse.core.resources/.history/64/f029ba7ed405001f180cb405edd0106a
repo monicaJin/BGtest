@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: eurekaClient
+
+server:
+  port: 9001
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8889/eureka/
+    healthcheck:
+      enabled: false
+#    instance:
+#      lease-expiration-duration-in-seconds: 30
+#      lease-renewal-interval-in-seconds: 10
+#    registry-fetch-interval-seconds: 5
+
+
+#1.1:属性讲解
+#(1)file: 日志输出到根目录下log文件夹，app-log.log文件中
+#(2)root： 定义了root的级别是info
+#(3) com.demo: 打印com.demo包下面的所有日志，级别为debug级别
+logging:
+  level:
+    root: info
+#    com.demo: debug
+#  file: log/app-log.log
+  pattern:
+    console: '%d{MM-dd-HH:mm:ss} [%thread] %-5level %logger- %msg%n'
+    #file=%d{yyyy-MM-dd-HH:mm} [%thread] %-5level %logger- %msg%n
+    #%-5level——日志级别，并且使用5个字符靠左对齐
+

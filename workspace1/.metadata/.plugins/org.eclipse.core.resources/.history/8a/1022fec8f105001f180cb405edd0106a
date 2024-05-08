@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>用户信息</title>
+<meta name="author" content="pan_junbiao的博客">
+</head>
+<body>
+	 home page here
+</body>
+</html>

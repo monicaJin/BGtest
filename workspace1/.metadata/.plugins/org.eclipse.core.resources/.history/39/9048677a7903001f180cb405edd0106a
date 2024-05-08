@@ -1,0 +1,8 @@
+spring.application.name=eurekaClient
+server.port=9998  #服务端口号
+
+eureka.client.serviceUrl=http://127.0.0.1:8888/eureka/
+
+spring:
+  application:
+    name: service-provider #提供者的服务名称--调用的时候根据改名称来调用对应服务的方法

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>订单信息</title>
+<meta name="author" content="ordertest here">
+<base th:href="@{/}">
+<meta charset="UTF-8">
+<!-- import CSS -->
+<link rel="stylesheet" href="../../static/css/index.css"
+	th:href="@{/css/index.css}" />
+</head>
+<body>
+	<!--     <h3>使用Thymeleaf模板引擎</h3>
+    id编号：<span th:text="${order.id}"></span><br/>
+    订单编号：<span th:text="${order.client_document_no}"></span><br/> -->
+     document.write("<h1>这是一个标题</h1>");
+    <script src="../static/js/jstest.js"></script>
+
+	<h3>使用Thymeleaf模板引擎2</h3>
+	<form action="Hdemo01.html" method="post">
+
+		<!--
+<input type="text">是文本输入框-->
+		<p>
+			id编号：<input type="text" name="orderid">
+		</p>
+
+		<!--
+将input标签的type改为submit即可生成一个提交按钮
+改为reset即可将该表单内的输入框内容清空
+-->
+		<p>
+			<input type="submit"> <input type="reset">
+		</p>
+
+	</form>
+</body>
+</html>

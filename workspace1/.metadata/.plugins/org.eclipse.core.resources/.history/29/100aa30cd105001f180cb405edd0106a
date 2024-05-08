@@ -1,0 +1,15 @@
+package com.example.service;
+
+public class Student {
+	
+	int id;
+
+	public Student() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public String getinfo() {
+		return "{\"name":\"logan",\"password\":\"hello\"}";
+	}
+
+}

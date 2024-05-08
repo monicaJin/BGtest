@@ -1,0 +1,5 @@
+spring.application.name=eurekaClient
+
+server.port=9998  #服务端口号
+
+eureka.client.serviceUrl=http://127.0.0.1:7001/eureka/

@@ -1,0 +1,18 @@
+/*var xhr = new XMLHttpRequest();
+var url = "http://192.168.103.175:9001/home/jdbc/mcc_znjx/check_order";
+xhr.open("POST", url, true);
+xhr.setRequestHeader("Content-Type", "application/json");
+xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+        var json = JSON.parse(xhr.responseText);
+        console.log(json);
+    }
+};
+var data = JSON.stringify({ key: "value" });
+xhr.send(data);*/
+
+
+function myFunction2()
+{
+    document.getElementById("demo2").innerHTML="我的第二个 JavaScript 函数";
+}

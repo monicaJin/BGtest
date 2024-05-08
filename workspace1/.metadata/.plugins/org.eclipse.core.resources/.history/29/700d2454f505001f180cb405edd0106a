@@ -1,0 +1,25 @@
+package com.example.controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+//不能用restcontroller, @RestController注解相当于@ResponseBody和@Controller合在一起的作用。在使用@RestController注解Controller时，Controller中的方法无法返回jsp页面，或者html，配置的视图解析器 InternalResourceViewResolver不起作用，返回的内容就是Return 里的内容。
+@Controller
+@RequestMapping("/webtest")
+public class WebTest {
+	
+	private static final Logger log = LoggerFactory.getLogger(WebTest.class);
+
+	public WebTest() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	@RequestMapping("/dbtest")
+	public String dbwebpage() {
+		return "dbtest";
+	}
+
+}

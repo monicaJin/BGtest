@@ -1,0 +1,46 @@
+package com.example.service.studenttest.copy;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.json.JSONObject;
+
+public class Student {
+	
+	String username,password;
+	int id;
+
+	public void setId(int i) {
+		// TODO Auto-generated method stub
+		this.id=i;
+		
+	}
+	
+	public void setUsername(String username) {
+		// TODO Auto-generated method stub
+		this.username=username;
+		
+	}
+	
+	
+	public void setPassword(String password) {
+		// TODO Auto-generated method stub
+		this.password=password;
+		
+	}
+	
+	public Map getJson() {
+		
+		Map studentmap=new HashMap();
+		studentmap.put(id, this.id);
+		studentmap.put(username, this.username);	
+		studentmap.put(password, this.password);
+		
+		return studentmap;
+		
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>订单信息</title>
+<meta name="author" content="ordertest here">
+<base th:href="@{/}">
+<meta charset="UTF-8">
+<!-- import CSS 
+<link rel="stylesheet" href="../../static/css/index.css"
+	th:href="@{/css/index.css}" />-->
+</head>
+<body>
+	<script src="../static/js/jstest.js"></script>
+	<script>
+	chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+	    handleAsyncMessage(message, sendResponse);
+	    return true;  // Indicate that response will be sent asynchronously
+	});
+
+	async function handleAsyncMessage(message, sendResponse) {
+	    // ...异步操作...
+	    sendResponse({ /* response data */ });
+	}
+
+	
+    </script>
+
+
+	<h1>我的 Web 页面</h1>
+	<p id="demo">一个段落</p>
+	<button type="button" onclick="myFunction()">尝试一下</button>
+	<script>
+		function myFunction() {
+			document.getElementById("demo").innerHTML = "我的第一个 JavaScript 函数";
+		}
+	</script>
+
+	<p id="demo2">第二个段落</p>
+	<button type="button" onclick="myFunction2()">尝试一下</button>
+	<br>
+
+	<p id="demo3">第三个段落</p>
+	<button type="button" onclick="myFunction3()">尝试一下</button>
+	<br>
+
+	<p id="demo4">
+		<label for="orderidtest">pls input orderid :</label>
+	</p>
+	<input type="text" id="demo4inputtext" name="orderidtest" required
+		minlength="4" maxlength="20" size="20" />
+	<!-- 	<script>	console.log() </script> -->
+	<button id="postbutton" type="button"
+		onclick="myFunction4(buttonclickfunction)">check</button>
+	<p id="demo5"></p>
+	<script>
+/* 		var obn = document.getElementById("postbutton")
+		obn.onclick = "myFunction4(buttonclickfunction)" */
+			
+		function buttonclickfunction(response) {
+			console.log("here2 is : " + response)
+			document.getElementById("demo5").innerHTML = "document no is "
+					+ response;
+		}
+	</script>
+
+</body>
+</html>

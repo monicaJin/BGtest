@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+
+ var httpRequest = new XMLHttpRequest();
+var url = "your_url_here";
+httpRequest.open("POST", url, true);
+httpRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+httpRequest.onreadystatechange = function () {
+  if (httpRequest.readyState === XMLHttpRequest.DONE) {
+    if (httpRequest.status === 200) {
+      //处理响应结果
+      var result = httpRequest.responseText;
+    } else {
+      //处理请求失败
+      alert('请求失败');
+    }
+  }
+};
+httpRequest.send("param1=value1&param2=value2");

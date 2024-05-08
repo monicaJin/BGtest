@@ -1,0 +1,44 @@
+spring.application.name=eurekaClient
+
+server.port= 9998
+
+eureka.client.service-url.defaultZone= http://192.168.103.175:7001
+
+# Eureka服务器的地址，类型为HashMap，缺省的Key为 defaultZone；缺省的Value为 http://localhost:8761/eureka
+# 如果服务注册中心为高可用集群时，多个注册中心地址以逗号分隔。 
+
+# 是否向注册中心注册自己，缺省：true
+# 一般情况下，Eureka服务端是不需要再注册自己的
+eureka.client.register-with-eureka = true
+
+# 是否从Eureka获取注册信息，缺省：true
+# 一般情况下，Eureka服务端是不需要的
+eureka.client.fetch-registry = true
+
+# 客户端拉取服务注册信息间隔，单位：秒，缺省：30
+eureka.client.registry-fetch-interval-seconds = 30
+
+# 是否启用客户端健康检查
+#eureka.client.health-check.enabled = true
+
+# 
+#eureka.client.eureka-service-url-poll-interval-seconds = 60
+
+# 连接Eureka服务器的超时时间，单位：秒，缺省：5
+#eureka.client.eureka-server-connect-timeout-seconds = 5
+
+# 从Eureka服务器读取信息的超时时间，单位：秒，缺省：8
+#eureka.client.eureka-server-read-timeout-seconds = 8
+
+# 获取实例时是否只保留状态为 UP 的实例，缺省：true
+#eureka.client.filter-only-up-instances = true
+
+# Eureka服务端连接空闲时的关闭时间，单位：秒，缺省：30
+#eureka.client.eureka-connection-idle-timeout-seconds = 30
+
+# 从Eureka客户端到所有Eureka服务端的连接总数，缺省：200
+#eureka.client.eureka-server-total-connections = 200
+
+# 从Eureka客户端到每个Eureka服务主机的连接总数，缺省：50
+#eureka.client.eureka-server-total-connections-per-host = 50
+

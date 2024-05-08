@@ -1,0 +1,9 @@
+package com.example.config.mysql;
+
+public class Sys_Order {
+
+	public Sys_Order() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
